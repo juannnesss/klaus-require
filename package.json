@@ -1,0 +1,62 @@
+{
+  "name": "klaus-require",
+  "main": "index.js",
+  "preferGlobal": false,
+  "version": "1.0.0",
+  "description": "Import/Load/Require module from 64 base string",
+  "author": {
+    "email": "juanvarahu@gmail.com",
+    "name": "Juan Vargas",
+    "url": "https://juannnesss.github.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "import",
+    "module",
+    "node-module",
+    "require",
+    "url",
+    "web",
+    "klaus"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "xo && node test.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juannnesss/klaus-require"
+  },
+  "homepage": "https://github.com/juannnesss/klaus-require#readme",
+  "bugs": {
+    "url": "https://github.com/juannnesss/klaus-require/issues"
+  },
+  "github": {
+    "name": "klaus-require",
+    "owner": "juannnesss"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "xo": "^0.33.1"
+  },
+  "xo": {
+    "rules": {
+      "quote-props": "warn",
+      "array-callback-return": "warn",
+      "require-atomic-updates": "warn"
+    },
+    "semicolon": false
+  }
+}
