@@ -2,7 +2,7 @@
   "name": "klaus-require",
   "main": "index.js",
   "preferGlobal": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Import/Load/Require module from 64 base string",
   "author": {
     "email": "juanvarahu@gmail.com",

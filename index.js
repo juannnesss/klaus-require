@@ -14,7 +14,7 @@ module.exports = async function requireFromString(code, filename, opts) {
   }
   // case when is base 64
   if (code.includes("http")) {
-    console.log("hello new requared", code, filename, axios);
+    console.log("hello new requared" /*  code, filename, axios */);
     const response = await axios.get(code); //.then((e) => e.data);
 
     console.log("response", response);
@@ -26,18 +26,18 @@ module.exports = async function requireFromString(code, filename, opts) {
     //const _module = new module.constructor();
     let m = new module.constructor();
     //_module.filename = code;
-    console.log(m, module);
+    //console.log(m, module);
     m.filename = filename;
     m._compile(string, code);
   } else {
     let string = Buffer.from(code, "base64").toString();
 
     let m = new module.constructor();
-    console.log(m, module);
+    //console.log(m, module);
     m.filename = filename;
     m._compile(string, filename);
   }
 
-  console.log("klaus modales", module, globalThis.KLAUS);
+  //console.log("klaus modales", module, globalThis.KLAUS);
   return { exports: module.exports, KLAUS: globalThis.KLAUS };
 };
